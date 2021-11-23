@@ -78,7 +78,12 @@ echo "`curl -s 'http://ip.me'` (public IP)"
 echo "`hostname -I``hostname`"
 echo "127.0.0.1 localhost"
 tput sgr0
-read -p "Local port (LP) [1-65535]? " local_port
+
+if [ $(($1)) -ge 1 ]; then
+    local_port=$1
+else
+    read -p "Local port (LP) [1-65535]? " local_port
+fi
 
 tput bold
 box_red "Listening port: $local_port"

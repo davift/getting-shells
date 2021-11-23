@@ -71,8 +71,17 @@ function box_green() {
 
 box_title;
 
-read -p "Remote address (RA) [IP or Name]? " remote_address
-read -p "Remote port (RP) [1-65535]? " remote_port
+if [ $1 ]; then
+    remote_address=$1
+else
+    read -p "Remote address (RA) [IP or Name]? " remote_address
+fi
+
+if [ $(($2)) -ge 1 ]; then
+    remote_port=$2
+else
+    read -p "Remote port (RP) [1-65535]? " remote_port
+fi
 
 tput bold
 box_red "Remote listener $remote_address:$remote_port"
