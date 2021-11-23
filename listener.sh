@@ -1,4 +1,11 @@
 #!/bin/bash
+
+#
+# version 1
+# date 2021-11-22
+# https://github.com/davift/getting-shells
+#
+
 clear
 
 allowAbort=true;
