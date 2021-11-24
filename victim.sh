@@ -88,14 +88,14 @@ box_red "Remote listener $remote_address:$remote_port"
 
 box_out "Testing..."
 
-which nc > /dev/null && box_green "Original NetCat - OK" || box_red "Original NetCat"
+which nc > /dev/null && box_green "Original NetCat - OK" || box_red "Original NetCat (sudo apt install netcat -y)"
 which ncat > /dev/null && box_green "NMAP's NetCat - OK" || box_red "NMAP's NetCat (sudo apt install ncat -y)"
 which pwncat > /dev/null && box_green "PwnCat - OK" || box_red "PwnCat (pip install pwncat)"
 which rustcat > /dev/null && box_green "RustCat - OK" || box_red "RustCat (curl -s https://raw.githubusercontent.com/robiot/rustcat/main/pkg/debian-install.sh | sudo bash)"
-which bash > /dev/null && box_green "Bash - OK" || box_red "Bash"
-which sh > /dev/null && box_green "Shell - OK" || box_red "Shell"
+which bash > /dev/null && box_green "Bash - OK" || box_red "Bash (sudo apt install bash -y)"
+which sh > /dev/null && box_green "Shell - OK" || box_red "Shell (Not installed!)"
 which zsh > /dev/null && box_green "Zsh - OK" || box_red "Zsh (sudo apt install zsh -y)"
-which perl > /dev/null && box_green "Perl - OK" || box_red "Perl (sudo apt install per -y)"
+which perl > /dev/null && box_green "Perl - OK" || box_red "Perl (sudo apt install perl -y)"
 which python3 > /dev/null && box_green "Python3 - OK" || box_red "Python3 (sudo apt install python3 -y)"
 which php > /dev/null && box_green "PHP - OK" || box_red "PHP (sudo apt install php -y)"
 
@@ -269,19 +269,6 @@ do
             ;;
     esac
 done
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 box_exited;
 

@@ -90,7 +90,7 @@ box_red "Listening port: $local_port"
 
 box_out "Testing..."
 
-which nc > /dev/null && box_green "Original NetCat - OK" || box_red "Original NetCat"
+which nc > /dev/null && box_green "Original NetCat - OK" || box_red "Original NetCat (sudo apt install netcat -y)"
 which ncat > /dev/null && box_green "NMAP's NetCat - OK" || box_red "NMAP's NetCat (sudo apt install ncat -y)"
 which pwncat > /dev/null && box_green "PwnCat - OK" || box_red "PwnCat (pip install pwncat)"
 which rcat > /dev/null && box_green "RustCat - OK" || box_red "RustCat (curl -s https://raw.githubusercontent.com/robiot/rustcat/main/pkg/debian-install.sh | sudo bash)"
