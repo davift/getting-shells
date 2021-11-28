@@ -90,12 +90,12 @@ box_red "Listening port: $local_port"
 
 box_out "Testing..."
 
-which nc > /dev/null && box_green "Original NetCat - OK" || box_red "Original NetCat (sudo apt install netcat -y)"
-which ncat > /dev/null && box_green "NMAP's NetCat - OK" || box_red "NMAP's NetCat (sudo apt install ncat -y)"
-which pwncat > /dev/null && box_green "PwnCat - OK" || box_red "PwnCat (pip install pwncat)"
-which rcat > /dev/null && box_green "RustCat - OK" || box_red "RustCat (curl -s https://raw.githubusercontent.com/robiot/rustcat/main/pkg/debian-install.sh | sudo bash)"
-which python3 > /dev/null && box_green "Python3 - OK" || box_red "Python3 (sudo apt install python3 -y)"
-which php > /dev/null && box_green "PHP - OK" || box_red "PHP (sudo apt install php -y)"
+which nc > /dev/null && box_green "Original NetCat - OK" || box_red "Original NetCat [sudo apt install netcat -y]"
+which ncat > /dev/null && box_green "NMAP's NetCat - OK" || box_red "NMAP's NetCat [sudo apt install ncat -y]"
+which pwncat > /dev/null && box_green "PwnCat - OK" || box_red "PwnCat [pip install pwncat]"
+which rcat > /dev/null && box_green "RustCat - OK" || box_red "RustCat [bash <(curl -s https://raw.githubusercontent.com/robiot/rustcat/main/pkg/debian-install.sh)]"
+which python3 > /dev/null && box_green "Python3 - OK" || box_red "Python3 [sudo apt install python3 -y]"
+which php > /dev/null && box_green "PHP - OK" || box_red "PHP [sudo apt install php -y]"
 
 box_out "Listeners"
 
