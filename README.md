@@ -66,4 +66,4 @@ python3 webshell.py
 
 ## More Information
 
-Read more at https://blog.dftorres.ca/?p=2224.
+Read more at https://dft.wiki/?p=2224.
